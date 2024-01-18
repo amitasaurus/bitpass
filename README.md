@@ -1,36 +1,69 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Bitpass Coded Implementation
+
+## About the Project
+
+This project is a coded implementation of the Bitpass design created by Pavel Koltsov. The goal is to create a functional version of Bitpass that adheres to the original design principles and functionality.
+
+## Design Inspiration
+
+Original Bitpass design by Pavel Koltsov: https://www.behance.net/gallery/153271935/bitpass
+
+## Key Features
+
+[List the core features of your implementation here]
+
+## Technologies Used
+
+[List the programming languages, frameworks, or libraries used in your project]
 
 ## Getting Started
 
-First, run the development server:
+Prerequisites:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+[List any software or tools that need to be installed before running the project]
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Installation:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/bitpass-coded.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd bitpass-coded
+   ```
+3. Install dependencies (if applicable):
+   ```bash
+   npm install  # Example for Node.js projects
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Usage:
 
-## Learn More
+1. Run the project:
+   ```bash
+   # Provide instructions on how to run the project, such as:
+   python main.py  # Example for Python projects
+   npm start  # Example for Node.js projects
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+## Contributing
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+We welcome contributions! Please follow these steps:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+1. Fork the repository.
+2. Create a new branch for your changes.
+3. Make your changes and commit them.
+4. Push your changes to your fork.
+5. Submit a pull request.
 
-## Deploy on Vercel
+## License
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+This project is licensed under the MIT License: [https://choosealicense.com/licenses/mit/](https://choosealicense.com/licenses/mit/).
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Contact
+
+Your Name - [Your email address]
+
+## Acknowledgements
+
+Pavel Koltsov for the original Bitpass design
