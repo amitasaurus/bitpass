@@ -3,7 +3,8 @@ import { noto_serif } from '@/lib/fonts';
 import { cn } from '@/lib/utils';
 import { GitHubLogoIcon } from '@radix-ui/react-icons';
 import SocialButton from '@/components/ui/social-button';
-import Form from '@/components/signup-form';
+import SignUpForm from '@/components/signup-form';
+import LoginFrom from '@/components/login-form';
 
 export default function Login() {
   return (
@@ -25,7 +26,8 @@ export default function Login() {
           Login with Github
         </SocialButton>
         <div className="h-[1px] bg-slate-200 w-full my-8 relative login-divider"></div>
-        <Form />
+        {/* <SignUpForm /> */}
+        <LoginFrom />
       </div>
     </div>
   );
