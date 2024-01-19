@@ -1,4 +1,10 @@
 import type { NextAuthOptions } from 'next-auth';
+import type {
+  GetServerSidePropsContext,
+  NextApiRequest,
+  NextApiResponse,
+} from 'next';
+import { getServerSession } from 'next-auth';
 import GoogleProvider from 'next-auth/providers/google';
 
 export const options: NextAuthOptions = {
@@ -8,4 +14,7 @@ export const options: NextAuthOptions = {
       clientSecret: process.env.GOOGLE_CLIENT_SECRET as string,
     }),
   ],
+  pages: {
+    signIn: '/',
+  },
 };

@@ -1,3 +1,4 @@
+'use client';
 import React from 'react';
 import { noto_serif } from '@/lib/fonts';
 import { cn } from '@/lib/utils';
@@ -5,8 +6,10 @@ import { GitHubLogoIcon } from '@radix-ui/react-icons';
 import SocialButton from '@/components/ui/social-button';
 import SignUpForm from '@/components/signup-form';
 import LoginFrom from '@/components/login-form';
+import { signIn, getProviders } from 'next-auth/react';
 
-export default function Login() {
+export default async function Login() {
+  const providers = await getProviders();
   return (
     <div className="flex flex-col items-center justify-center h-full p-4 text-center">
       <div className="w-1/2">
@@ -21,7 +24,10 @@ export default function Login() {
         <div className="mt-1 text-base text-slate-500">
           Let's get started with your 30 days free trial
         </div>
-        <SocialButton styles="mt-4">
+        <SocialButton
+          styles="mt-4"
+          onClick={() => signIn(providers?.google.id)}
+        >
           <GitHubLogoIcon className="mr-2 mt-[1px]" />
           Login with Github
         </SocialButton>
