@@ -2,8 +2,18 @@ import nastuh from '@/public/nastuh-abootalebi.jpg';
 import aiony from '@/public/aiony-haust.jpg';
 import albert from '@/public/albert-dera.jpg';
 import toa from '@/public/toa-heftiba.jpg';
-
-const testimonialsArr = [
+import {
+  generateRandomString,
+  getRandomDate,
+  getRandomSecurityLevel,
+} from './utils';
+export type TCollections = {
+  title: string;
+  className?: string;
+  backgroundColor?: string;
+  textColor?: string;
+};
+export const testimonialsArr = [
   {
     image: nastuh,
     name: 'Survey Corps',
@@ -30,4 +40,144 @@ const testimonialsArr = [
   },
 ];
 
-export { testimonialsArr };
+export const menuItemsArr = [
+  {
+    title: 'Collections',
+    icon: '/collection.png',
+    uri: '/vault/collections',
+  },
+  {
+    title: 'Logins',
+    icon: '/password.png',
+    uri: '/vault/logins',
+  },
+  {
+    title: 'Bank Cards',
+    icon: '/card.png',
+    uri: '/vault/bank-cards',
+  },
+  {
+    title: 'IDs',
+    icon: '/identity.png',
+    uri: '/vault/ids',
+  },
+  {
+    title: 'Notes',
+    icon: '/notes.png',
+    uri: '/vault/notes',
+  },
+  {
+    title: 'Trash',
+    icon: '/trash.png',
+    uri: '/vault/trash',
+  },
+];
+
+export const patterns = [
+  'bg-pattern-1',
+  'bg-pattern-2',
+  'bg-pattern-3',
+  'bg-pattern-4',
+  'bg-pattern-5',
+  'bg-pattern-6',
+  'bg-pattern-7',
+  'bg-pattern-8',
+];
+
+export const defaultCollectionsArr: TCollections[] = [
+  {
+    title: 'Social Media',
+  },
+  {
+    title: 'Streaming Services',
+  },
+  {
+    title: 'Shopping',
+  },
+  {
+    title: 'Banking & Finance',
+  },
+  {
+    title: 'Email & Communication',
+  },
+  {
+    title: 'Utilities & Services',
+  },
+  {
+    title: 'Government & Healthcare',
+  },
+  {
+    title: 'Fitness & Wellness',
+  },
+];
+
+export type TWebsite = {
+  name: string;
+  uri: string;
+  logo: string;
+  password?: string;
+  last_updated_at?: Date;
+  password_strength?: string;
+};
+let websites: TWebsite[] = [
+  {
+    name: 'Google',
+    uri: 'https://www.google.com',
+    logo: '/google.png',
+  },
+  {
+    name: 'Facebook',
+    uri: 'https://www.facebook.com',
+    logo: '/facebook.png',
+  },
+  {
+    name: 'Amazon',
+    uri: 'https://www.amazon.com',
+    logo: '/amazon.png',
+  },
+  {
+    name: 'Twitter',
+    uri: 'https://www.twitter.com',
+    logo: '/twitter.png',
+  },
+  {
+    name: 'LinkedIn',
+    uri: 'https://www.linkedin.com',
+    logo: '/linkedin.png',
+  },
+  {
+    name: 'YouTube',
+    uri: 'https://www.youtube.com',
+    logo: '/youtube.png',
+  },
+  {
+    name: 'Instagram',
+    uri: 'https://www.instagram.com',
+    logo: '/instagram.png',
+  },
+  {
+    name: 'Netflix',
+    uri: 'https://www.netflix.com',
+    logo: '/netflix.png',
+  },
+  {
+    name: 'GitHub',
+    uri: 'https://www.github.com',
+    logo: '/github.png',
+  },
+  {
+    name: 'Wikipedia',
+    uri: 'https://www.wikipedia.org',
+    logo: '/wikipedia.png',
+  },
+];
+const fakeWebsiteCreds = () => {
+  return websites.map((e) => {
+    e.password = generateRandomString();
+    e.last_updated_at = getRandomDate();
+    e.password_strength = getRandomSecurityLevel();
+    return e;
+  });
+};
+
+export const websitesArr = fakeWebsiteCreds();

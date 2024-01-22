@@ -84,3 +84,74 @@
   background-color: #fff;
   left: 48%;
 }
+
+.bg-pattern-1 {
+  background-color: #fb7185;
+  opacity: 1;
+  background-image: repeating-radial-gradient(circle at 0 0, transparent 0, #fb7185 28px),
+    repeating-linear-gradient(#f43f5e55, #f43f5e);
+}
+
+.bg-pattern-2 {
+  background-color: #c084fc;
+  opacity: 1;
+  background-image: radial-gradient(#a855f7 1.4000000000000001px, #c084fc 1.4000000000000001px);
+  background-size: 18px 18px;
+}
+.bg-pattern-3 {
+  background-color: #4ade80;
+  opacity: 1;
+  background-size: 28px 28px;
+  background-image: repeating-linear-gradient(45deg, #10b981 0, #10b981 2.8000000000000003px, #4ade80 0, #4ade80 50%);
+}
+.bg-pattern-4 {
+  background-color: #f87171;
+  opacity: 1;
+  background-image: linear-gradient(30deg, #ef4444 12%, transparent 12.5%, transparent 87%, #ef4444 87.5%, #ef4444),
+    linear-gradient(150deg, #ef4444 12%, transparent 12.5%, transparent 87%, #ef4444 87.5%, #ef4444),
+    linear-gradient(30deg, #ef4444 12%, transparent 12.5%, transparent 87%, #ef4444 87.5%, #ef4444),
+    linear-gradient(150deg, #ef4444 12%, transparent 12.5%, transparent 87%, #ef4444 87.5%, #ef4444),
+    linear-gradient(60deg, #ef444477 25%, transparent 25.5%, transparent 75%, #ef444477 75%, #ef444477),
+    linear-gradient(60deg, #ef444477 25%, transparent 25.5%, transparent 75%, #ef444477 75%, #ef444477);
+  background-size: 56px 98px;
+  background-position:
+    0 0,
+    0 0,
+    28px 49px,
+    28px 49px,
+    0 0,
+    28px 49px;
+}
+.bg-pattern-5 {
+  background-color: #f87171;
+  opacity: 1;
+  background-image: radial-gradient(#ef4444 1.4000000000000001px, #f87171 1.4000000000000001px);
+  background-size: 21px 21px;
+}
+.bg-pattern-6 {
+  background-color: #4ade80;
+  opacity: 1;
+  background-image: repeating-radial-gradient(circle at 0 0, transparent 0, #4ade80 28px),
+    repeating-linear-gradient(#22c55e55, #22c55e);
+}
+.bg-pattern-7 {
+  background-color: #c084fc;
+  opacity: 1;
+  background:
+    radial-gradient(circle, transparent 20%, #c084fc 20%, #c084fc 80%, transparent 80%, transparent),
+    radial-gradient(circle, transparent 20%, #c084fc 20%, #c084fc 80%, transparent 80%, transparent) 70px 70px,
+    linear-gradient(#a855f7 5.6000000000000005px, transparent 5.6000000000000005px) 0 -2.8000000000000003px,
+    linear-gradient(90deg, #a855f7 5.6000000000000005px, #c084fc 5.6000000000000005px) -2.8000000000000003px 0;
+  background-size:
+    70px 70px,
+    70px 70px,
+    35px 35px,
+    35px 35px;
+}
+.bg-pattern-8 {
+  background-color: #e2e8f0;
+  opacity: 1;
+  background-image: radial-gradient(circle at center center, #cbd5e1, #e2e8f0),
+    repeating-radial-gradient(circle at center center, #cbd5e1, #cbd5e1, 28px, transparent 56px, transparent 28px);
+  background-blend-mode: multiply;
+}
